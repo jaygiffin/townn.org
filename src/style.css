@@ -6,19 +6,20 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 10em;
+	width: 15vw;
 	height: 100vh;
-	background: #800080;
+	background: rgba(220,220,220, 0.3);
+	
 	/*box-shadow: 2px 3px 3px rgba(255,255,255,0.5);*/
 }
 .side-logo {
 	font-size: 2.5em;
 	text-align: center;
-	padding: 1em 0;
-	background: white;
+	padding: 0.5vh  0;
+	background: rgba(220,220,220, 0.3);
 }
 .page-content{
-	margin-left: 10em;
+	margin-left: 15vw;
 }
 .menu-item{
 	margin: 0.5em;
@@ -40,4 +41,47 @@ body {
 }
 .menu-item:hover{
 	background: rgba(255,255,255,0.3);
+}
+.title-image-happy{
+	max-width: 8vw;
+	max-height: 20vh;
+	padding-right: 5vw;
+	animation: fadeIn 5s;
+}
+.title-image-sad{
+	max-width: 8vw;
+	max-height: 20vh;
+	padding-left: 5vw;
+	animation: fadeIn 5s;
+}
+.title-image-the{
+	max-width: 20vw;
+	max-height: 20vh;
+	margin: 3vh 0 0;
+}
+.title-image-organization{
+	max-width: 55vw;
+	max-height: 25vh;
+}
+.title-image-with{
+	max-width: 22vw;
+	max-height: 20vh;
+	animation: fadeIn 5s;
+}
+.title-image-no{
+	max-width: 10vw;
+	max-height: 20vh;
+	padding-left: 3vw;
+	animation: fadeIn 5s;
+}
+.title-image-name{
+	max-width: 23vw;
+	max-height: 20vh;
+	padding-left: 3vw;
+	animation: fadeIn 5s;
+}
+@keyframes fadeIn{
+	0% {opacity: 0;}
+	25% {opacity: 0;}
+	100% {opacity: 1;}
 }
