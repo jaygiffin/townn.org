@@ -1,0 +1,28 @@
+#!/bin/sh
+
+cd "$(dirname "$(readlink -f -- "$0" || realpath -- "$0")")" 2>/dev/null
+
+doExit=0
+
+if ! command -v php >/dev/null ; then
+  echo "ERROR: install the 'php' command to continue" 1>&2
+  doExit=1
+fi
+
+if ! command -v java >/dev/null ; then
+  echo "ERROR: install the 'java' command to continue" 1>&2
+  doExit=1
+fi
+
+if test "$doExit" -eq 1 ; then
+  exit 1
+fi
+
+if command -v node >/dev/null ; then
+  node -- lib/build.js "$@"
+elif command -v nodejs >/dev/null ; then
+  nodejs -- lib/build.js "$@"
+else
+  echo "ERROR: install either the 'node' or 'nodejs' commands to continue" 1>&2
+fi
+
