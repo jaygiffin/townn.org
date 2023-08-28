@@ -26,3 +26,6 @@ else
   echo "ERROR: install either the 'node' or 'nodejs' commands to continue" 1>&2
 fi
 
+#rm -rf docs
+#cp -R dist docs
+
