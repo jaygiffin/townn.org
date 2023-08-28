@@ -11,7 +11,7 @@
 	<body>
 		<div class="side-menu">
 			<div class="side-logo">
-				<a href="/"><img src="images/text-TOWNN-filled.png" width="95%"/></a>
+				<a href="/"><img src="images/text-townn-filled.png" width="95%"/></a>
 			</div>
 			<a href="/" class="menu-item">
 				<div class="link-chevron">›</div>home
